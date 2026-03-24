@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Search crawled web content">
+    <title>🔍 Web Crawler — Search</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <span class="nav-logo">🕷️</span>
+            <span class="nav-title">Web Crawler</span>
+        </div>
+        <div class="nav-links">
+            <a href="/" class="nav-link">Dashboard</a>
+            <a href="/search-page" class="nav-link active">Search</a>
+        </div>
+        <div class="nav-status" id="systemStatus">
+            <span class="status-dot"></span>
+            <span class="status-text">Search</span>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- Search Box -->
+        <section class="card glass-card search-card">
+            <h1 class="search-title">Search Crawled Content</h1>
+            <p class="search-subtitle">Find indexed pages by keyword. Results update in real-time as crawlers discover new content.</p>
+            <form id="searchForm" class="search-form">
+                <div class="search-input-wrapper">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="searchQuery" placeholder="Enter search terms..."
+                           class="search-input" autofocus>
+                    <button type="submit" class="btn btn-primary search-btn" id="searchBtn">
+                        Search
+                    </button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Results -->
+        <section id="resultsSection" class="results-section" style="display: none;">
+            <div class="results-header">
+                <h2 class="results-title">Results</h2>
+                <span class="results-count" id="resultsCount">0 results</span>
+            </div>
+
+            <div id="resultsList" class="results-list">
+            </div>
+        </section>
+    </main>
+
+    <script src="/static/js/app.js"></script>
+    <script>
+        const searchForm = document.getElementById('searchForm');
+        const searchQuery = document.getElementById('searchQuery');
+        const resultsSection = document.getElementById('resultsSection');
+        const resultsList = document.getElementById('resultsList');
+        const resultsCount = document.getElementById('resultsCount');
+
+        searchForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const q = searchQuery.value.trim();
+            if (!q) return;
+            await doSearch(q);
+        });
+
+        async function doSearch(query) {
+            const btn = document.getElementById('searchBtn');
+            btn.disabled = true;
+            btn.textContent = 'Searching...';
+
+            try {
+                const resp = await fetch(`/search?query=${encodeURIComponent(query)}&sortBy=relevance&limit=50`);
+                const data = await resp.json();
+
+                resultsSection.style.display = 'block';
+                resultsCount.textContent = `${data.count} result${data.count !== 1 ? 's' : ''}`;
+
+                if (data.count === 0) {
+                    resultsList.innerHTML = `
+                        <div class="empty-state">
+                            <span class="empty-icon">🔍</span>
+                            <p>No results found for "${query}"</p>
+                            <p class="empty-hint">Try different keywords or wait for active crawlers to index more pages.</p>
+                        </div>`;
+                    return;
+                }
+
+                resultsList.innerHTML = `
+                    <div class="results-table-wrap">
+                        <table class="results-table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Relevant URL</th>
+                                    <th>Origin URL</th>
+                                    <th>Depth</th>
+                                    <th>Score</th>
+                                    <th>Matched Words</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                ${data.results.map((r, i) => `
+                                    <tr>
+                                        <td class="td-num">${i + 1}</td>
+                                        <td class="td-url">
+                                            <a href="${r.relevant_url}" target="_blank" rel="noopener">
+                                                ${truncateUrl(r.relevant_url, 60)}
+                                            </a>
+                                        </td>
+                                        <td class="td-origin">
+                                            <a href="${r.origin_url}" target="_blank" rel="noopener">
+                                                ${truncateUrl(r.origin_url, 40)}
+                                            </a>
+                                        </td>
+                                        <td class="td-depth">${r.depth}</td>
+                                        <td class="td-score">${r.relevance_score}</td>
+                                        <td class="td-words">
+                                            ${(r.matched_words || []).slice(0, 5).map(w =>
+                                                `<span class="word-tag">${w}</span>`
+                                            ).join('')}
+                                        </td>
+                                    </tr>
+                                `).join('')}
+                            </tbody>
+                        </table>
+                    </div>`;
+
+            } catch (err) {
+                showToast('Search failed', 'error');
+            } finally {
+                btn.disabled = false;
+                btn.textContent = 'Search';
+            }
+        }
+
+        function truncateUrl(url, max) {
+            if (url.length <= max) return url;
+            return url.substring(0, max - 3) + '...';
+        }
+    </script>
+</body>
+</html>

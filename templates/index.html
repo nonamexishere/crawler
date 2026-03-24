@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web Crawler Dashboard - Start and monitor web crawls">
+    <title>🕷️ Web Crawler — Dashboard</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <span class="nav-logo">🕷️</span>
+            <span class="nav-title">Web Crawler</span>
+        </div>
+        <div class="nav-links">
+            <a href="/" class="nav-link active">Dashboard</a>
+            <a href="/search-page" class="nav-link">Search</a>
+        </div>
+        <div class="nav-status" id="systemStatus">
+            <span class="status-dot"></span>
+            <span class="status-text">System Ready</span>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- New Crawl Form -->
+        <section class="card glass-card">
+            <h2 class="card-title">
+                <span class="icon">🚀</span>
+                Start New Crawl
+            </h2>
+            <form id="crawlForm" class="crawl-form">
+                <div class="form-row">
+                    <div class="form-group form-group-wide">
+                        <label for="originUrl">Origin URL</label>
+                        <input type="url" id="originUrl" placeholder="https://example.com"
+                               required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="depth">Depth (k)</label>
+                        <input type="number" id="depth" value="2" min="0" max="10"
+                               class="form-input">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="maxWorkers">Workers</label>
+                        <input type="number" id="maxWorkers" value="8" min="1" max="32"
+                               class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="maxQueueSize">Max Queue</label>
+                        <input type="number" id="maxQueueSize" value="10000" min="100" max="100000"
+                               class="form-input">
+                    </div>
+                    <div class="form-group form-group-btn">
+                        <button type="submit" class="btn btn-primary" id="startBtn">
+                            <span class="btn-text">Start Crawl</span>
+                            <span class="btn-icon">→</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <!-- System Overview -->
+        <section class="stats-grid" id="systemStats">
+            <div class="stat-card">
+                <div class="stat-value" id="totalCrawlers">0</div>
+                <div class="stat-label">Total Crawlers</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value stat-active" id="activeCrawlers">0</div>
+                <div class="stat-label">Active</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value stat-paused" id="pausedCrawlers">0</div>
+                <div class="stat-label">Paused</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="indexEntries">0</div>
+                <div class="stat-label">Indexed Words</div>
+            </div>
+        </section>
+
+        <!-- Crawlers List -->
+        <section class="card glass-card">
+            <h2 class="card-title">
+                <span class="icon">📊</span>
+                Crawlers
+            </h2>
+            <div id="crawlersList" class="crawlers-list">
+                <div class="empty-state">
+                    <span class="empty-icon">🕸️</span>
+                    <p>No crawlers yet. Start one above!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="/static/js/app.js"></script>
+    <script>
+        // ── Dashboard-specific logic ──
+        const crawlForm = document.getElementById('crawlForm');
+
+        crawlForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const btn = document.getElementById('startBtn');
+            btn.disabled = true;
+            btn.querySelector('.btn-text').textContent = 'Starting...';
+
+            try {
+                const resp = await fetch('/api/index', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({
+                        origin: document.getElementById('originUrl').value,
+                        depth: parseInt(document.getElementById('depth').value),
+                        max_workers: parseInt(document.getElementById('maxWorkers').value),
+                        max_queue_size: parseInt(document.getElementById('maxQueueSize').value),
+                    })
+                });
+                const data = await resp.json();
+                if (resp.ok) {
+                    showToast(`Crawl started: ${data.crawler_id}`, 'success');
+                    document.getElementById('originUrl').value = '';
+                    refreshCrawlers();
+                } else {
+                    showToast(data.error || 'Failed to start crawl', 'error');
+                }
+            } catch (err) {
+                showToast('Network error', 'error');
+            } finally {
+                btn.disabled = false;
+                btn.querySelector('.btn-text').textContent = 'Start Crawl';
+            }
+        });
+
+        // ── Refresh crawlers list ──
+        async function refreshCrawlers() {
+            try {
+                const resp = await fetch('/api/crawlers');
+                const data = await resp.json();
+                renderCrawlers(data.crawlers || []);
+            } catch (e) { /* silent */ }
+
+            try {
+                const resp = await fetch('/api/system/status');
+                const data = await resp.json();
+                document.getElementById('totalCrawlers').textContent = data.total_crawlers || 0;
+                document.getElementById('activeCrawlers').textContent = data.active_crawlers || 0;
+                document.getElementById('pausedCrawlers').textContent = data.paused_crawlers || 0;
+                document.getElementById('indexEntries').textContent =
+                    (data.index_stats?.total_entries || 0).toLocaleString();
+
+                const dot = document.querySelector('.status-dot');
+                const text = document.querySelector('.status-text');
+                if (data.active_crawlers > 0) {
+                    dot.className = 'status-dot active';
+                    text.textContent = `${data.active_crawlers} Active`;
+                } else {
+                    dot.className = 'status-dot';
+                    text.textContent = 'System Ready';
+                }
+            } catch (e) { /* silent */ }
+        }
+
+        function renderCrawlers(crawlers) {
+            const container = document.getElementById('crawlersList');
+            if (!crawlers.length) {
+                container.innerHTML = `
+                    <div class="empty-state">
+                        <span class="empty-icon">🕸️</span>
+                        <p>No crawlers yet. Start one above!</p>
+                    </div>`;
+                return;
+            }
+
+            // Sort: running first, then paused, then others
+            const order = {running: 0, paused: 1, created: 2, completed: 3, stopped: 4};
+            crawlers.sort((a, b) => (order[a.status] ?? 5) - (order[b.status] ?? 5));
+
+            container.innerHTML = crawlers.map(c => {
+                const statusClass = `status-${c.status}`;
+                const queuePct = c.queue_utilization || 0;
+                const isActive = c.status === 'running' || c.status === 'paused';
+                const elapsed = c.elapsed_seconds ? formatDuration(c.elapsed_seconds) : '—';
+                const pps = c.pages_per_sec || 0;
+
+                return `
+                <div class="crawler-card ${statusClass}">
+                    <div class="crawler-header">
+                        <div class="crawler-info">
+                            <span class="crawler-id">${c.crawler_id}</span>
+                            <span class="crawler-badge badge-${c.status}">${c.status}</span>
+                            ${pps > 0 ? `<span class="crawler-badge" style="background:rgba(52,211,153,0.15);color:#34d399">${pps} pages/s</span>` : ''}
+                        </div>
+                        <div class="crawler-actions">
+                            ${c.status === 'running' ? `
+                                <button class="btn btn-small btn-warn" onclick="controlCrawler('${c.crawler_id}', 'pause')">⏸ Pause</button>
+                                <button class="btn btn-small btn-danger" onclick="controlCrawler('${c.crawler_id}', 'stop')">⏹ Stop</button>
+                            ` : ''}
+                            ${c.status === 'paused' ? `
+                                <button class="btn btn-small btn-success" onclick="controlCrawler('${c.crawler_id}', 'resume')">▶ Resume</button>
+                                <button class="btn btn-small btn-danger" onclick="controlCrawler('${c.crawler_id}', 'stop')">⏹ Stop</button>
+                            ` : ''}
+                            <a href="/status/${c.crawler_id}" class="btn btn-small btn-outline">Details →</a>
+                        </div>
+                    </div>
+                    <div class="crawler-url">${c.origin}</div>
+                    <div class="crawler-meta">
+                        <span>Depth: ${c.max_depth}</span>
+                        <span>Workers: ${c.active_workers || 0}/${c.max_workers}</span>
+                        <span>⏱ ${elapsed}</span>
+                    </div>
+                    <div class="crawler-stats">
+                        <div class="mini-stat">
+                            <span class="mini-value">${c.stats.pages_crawled}</span>
+                            <span class="mini-label">Pages</span>
+                        </div>
+                        <div class="mini-stat">
+                            <span class="mini-value">${c.stats.links_discovered}</span>
+                            <span class="mini-label">Links</span>
+                        </div>
+                        <div class="mini-stat">
+                            <span class="mini-value">${c.total_pending || 0}</span>
+                            <span class="mini-label">Pending</span>
+                        </div>
+                        <div class="mini-stat">
+                            <span class="mini-value">${c.stats.links_dropped || 0}</span>
+                            <span class="mini-label">Dropped</span>
+                        </div>
+                        <div class="mini-stat">
+                            <span class="mini-value">${c.stats.pages_errored}</span>
+                            <span class="mini-label">Errors</span>
+                        </div>
+                    </div>
+                    ${isActive ? (() => {
+                        const peak = Math.max(c.stats.queue_high_water || 0, 10);
+                        const pending = c.total_pending || 0;
+                        const actPct = Math.min(Math.round((pending / peak) * 100), 100);
+                        return `
+                        <div class="progress-section">
+                            <div class="progress-label">
+                                <span>Activity (vs Peak: ${peak})</span>
+                                <span>${actPct}%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill ${queuePct > 80 ? 'backpressure' : ''}"
+                                     style="width: ${actPct}%"></div>
+                            </div>
+                            <div style="font-size: 11px; color: var(--text-dim); margin-top: 4px; display: flex; justify-content: space-between;">
+                                <span>${pending} pending</span>
+                                <span>Capacity: ${queuePct}% of ${c.max_queue_size}</span>
+                            </div>
+                            ${queuePct > 80 ? '<div class="backpressure-warn">⚠ Back pressure active</div>' : ''}
+                            ${(c.stats.links_dropped || 0) > 0 ? `<div class="backpressure-warn">⚠ ${c.stats.links_dropped} links dropped (queue full)</div>` : ''}
+                        </div>
+                        `;
+                    })() : ''}
+                </div>`;
+            }).join('');
+        }
+
+        async function controlCrawler(id, action) {
+            try {
+                await fetch(`/api/crawlers/${id}/${action}`, {method: 'POST'});
+                refreshCrawlers();
+            } catch (e) {
+                showToast('Action failed', 'error');
+            }
+        }
+
+        function formatDuration(secs) {
+            if (secs < 60) return `${Math.round(secs)}s`;
+            if (secs < 3600) return `${Math.floor(secs/60)}m ${Math.round(secs%60)}s`;
+            return `${Math.floor(secs/3600)}h ${Math.floor((secs%3600)/60)}m`;
+        }
+
+        // Auto-refresh
+        refreshCrawlers();
+        setInterval(refreshCrawlers, 2000);
+    </script>
+</body>
+</html>

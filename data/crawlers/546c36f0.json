@@ -1,0 +1,2709 @@
+{
+  "crawler_id": "546c36f0",
+  "origin": "https://quotes.toscrape.com",
+  "max_depth": 2,
+  "status": "running",
+  "stats": {
+    "pages_crawled": 83,
+    "pages_errored": 0,
+    "links_discovered": 931,
+    "links_dropped": 0,
+    "queue_high_water": 770
+  },
+  "visited": [
+    "https://quotes.toscrape.com/tag/live/page/1/",
+    "https://quotes.toscrape.com/tag/love/page/1/",
+    "https://quotes.toscrape.com/tag/miracles/page/1/",
+    "https://quotes.toscrape.com/tag/death/page/1/",
+    "https://quotes.toscrape.com/author/Steve-Martin",
+    "https://quotes.toscrape.com/tag/thinking/page/1/",
+    "https://quotes.toscrape.com/tag/deep-thoughts/page/1/",
+    "https://quotes.toscrape.com/tag/life/",
+    "https://quotes.toscrape.com/tag/misattributed-eleanor-roosevelt/page/1/",
+    "https://quotes.toscrape.com/tag/open-mind/page/1/",
+    "https://quotes.toscrape.com/tag/success/page/1/",
+    "https://quotes.toscrape.com/tag/classic/page/1/",
+    "https://quotes.toscrape.com/author/J-D-Salinger",
+    "https://quotes.toscrape.com/tag/books/page/1/",
+    "https://quotes.toscrape.com/author/Andre-Gide",
+    "https://quotes.toscrape.com/author/Jane-Austen",
+    "https://quotes.toscrape.com/tag/humor/",
+    "https://quotes.toscrape.com/author/Ralph-Waldo-Emerson",
+    "https://quotes.toscrape.com/author/Allen-Saunders",
+    "https://quotes.toscrape.com/tag/planning/page/1/",
+    "https://quotes.toscrape.com/author/Helen-Keller",
+    "https://quotes.toscrape.com/tag/indifference/page/1/",
+    "https://quotes.toscrape.com/tag/adulthood/page/1/",
+    "https://quotes.toscrape.com/author/George-Eliot",
+    "https://quotes.toscrape.com/tag/misattributed-john-lennon/page/1/",
+    "https://quotes.toscrape.com/tag/contentment/page/1/",
+    "https://quotes.toscrape.com/author/Thomas-A-Edison",
+    "https://quotes.toscrape.com/tag/love/",
+    "https://quotes.toscrape.com/tag/failure/page/1/",
+    "https://quotes.toscrape.com/tag/friendship/page/1/",
+    "https://quotes.toscrape.com/tag/hate/page/1/",
+    "https://quotes.toscrape.com/tag/philosophy/page/1/",
+    "https://quotes.toscrape.com/author/C-S-Lewis",
+    "https://quotes.toscrape.com/tag/navigation/page/1/",
+    "https://quotes.toscrape.com/tag/novelist-quotes/page/1/",
+    "https://quotes.toscrape.com/author/Douglas-Adams",
+    "https://quotes.toscrape.com/author/Madeleine-LEngle",
+    "https://quotes.toscrape.com/tag/obvious/page/1/",
+    "https://quotes.toscrape.com/author/Dr-Seuss",
+    "https://quotes.toscrape.com/tag/inspirational/page/1/",
+    "https://quotes.toscrape.com/tag/hope/page/1/",
+    "https://quotes.toscrape.com/tag/friends/page/1/",
+    "https://quotes.toscrape.com/tag/books/",
+    "https://quotes.toscrape.com/tag/be-yourself/page/1/",
+    "https://quotes.toscrape.com/tag/yourself/page/1/",
+    "https://quotes.toscrape.com/author/Terry-Pratchett",
+    "https://quotes.toscrape.com/author/Jorge-Luis-Borges",
+    "https://quotes.toscrape.com/author/George-Bernard-Shaw",
+    "https://quotes.toscrape.com/login",
+    "https://quotes.toscrape.com/author/Haruki-Murakami",
+    "https://quotes.toscrape.com/author/Marilyn-Monroe",
+    "https://quotes.toscrape.com/tag/tea/page/1/",
+    "https://quotes.toscrape.com/tag/activism/page/1/",
+    "https://quotes.toscrape.com/tag/literature/page/1/",
+    "https://quotes.toscrape.com/page/2/",
+    "https://www.goodreads.com/quotes",
+    "https://quotes.toscrape.com/tag/thought/page/1/",
+    "https://quotes.toscrape.com/tag/library/page/1/",
+    "https://quotes.toscrape.com/tag/friendship/",
+    "https://quotes.toscrape.com/tag/world/page/1/",
+    "https://quotes.toscrape.com/tag/humor/page/1/",
+    "https://quotes.toscrape.com/author/Albert-Einstein",
+    "https://quotes.toscrape.com/tag/simile/page/1/",
+    "https://quotes.toscrape.com/tag/miracle/page/1/",
+    "https://quotes.toscrape.com/tag/regrets/page/1/",
+    "https://quotes.toscrape.com/tag/truth/",
+    "https://quotes.toscrape.com/author/Elie-Wiesel",
+    "https://quotes.toscrape.com/tag/reading/",
+    "https://quotes.toscrape.com/tag/sisters/page/1/",
+    "https://quotes.toscrape.com/",
+    "https://quotes.toscrape.com/tag/simile/",
+    "https://quotes.toscrape.com/tag/value/page/1/",
+    "https://quotes.toscrape.com/tag/apathy/page/1/",
+    "https://quotes.toscrape.com/author/Ernest-Hemingway",
+    "https://quotes.toscrape.com/tag/fate/page/1/",
+    "https://quotes.toscrape.com/tag/life/page/2/",
+    "https://quotes.toscrape.com/tag/opposite/page/1/",
+    "https://quotes.toscrape.com/tag/abilities/page/1/",
+    "https://quotes.toscrape.com/tag/authors/page/1/",
+    "https://quotes.toscrape.com/tag/inspirational/",
+    "https://quotes.toscrape.com",
+    "https://quotes.toscrape.com/tag/plans/page/1/",
+    "https://quotes.toscrape.com/tag/friends/",
+    "https://quotes.toscrape.com/tag/inspirational/page/2/",
+    "https://quotes.toscrape.com/author/Eleanor-Roosevelt",
+    "https://quotes.toscrape.com/tag/heartbreak/page/1/",
+    "https://quotes.toscrape.com/tag/writing/page/1/",
+    "https://quotes.toscrape.com/tag/paraphrased/page/1/",
+    "https://quotes.toscrape.com/tag/comedy/page/1/",
+    "https://quotes.toscrape.com/tag/choices/page/1/",
+    "https://quotes.toscrape.com/tag/life/page/1/",
+    "https://quotes.toscrape.com/author/J-K-Rowling",
+    "https://quotes.toscrape.com/tag/reading/page/1/",
+    "https://quotes.toscrape.com/tag/edison/page/1/",
+    "https://quotes.toscrape.com/author/Mark-Twain",
+    "https://quotes.toscrape.com/tag/aliteracy/page/1/",
+    "https://www.zyte.com",
+    "https://quotes.toscrape.com/author/Martin-Luther-King-Jr",
+    "https://quotes.toscrape.com/tag/change/page/1/"
+  ],
+  "queue": [
+    {
+      "url": "https://quotes.toscrape.com/tag/children/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/difficult/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/grown-ups/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/write/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/writers/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/books/page/2/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/love/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/inspirational/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/life/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/humor/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/books/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/reading/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/friendship/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/friends/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/truth/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/simile/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/love/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/inspirational/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/life/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/humor/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/books/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/reading/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/friendship/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/friends/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/truth/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/simile/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/love/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/inspirational/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/life/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/humor/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/books/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/reading/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/friendship/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/friends/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/truth/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/simile/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/simile/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Garrison-Keillor",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/religion/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Jim-Henson",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Charles-M-Schulz",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/chocolate/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/food/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Suzanne-Collins",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Charles-Bukowski",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Terry-Pratchett",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/open-mind/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Dr-Seuss",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/philosophy/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/George-Carlin",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/insanity/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/lies/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/lying/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/self-indulgence/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/truth/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/humor/page/2/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/love/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/inspirational/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/life/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/humor/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/books/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/reading/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/friendship/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/friends/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/truth/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/simile/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/friends/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/heartbreak/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/sisters/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Bob-Marley",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Elie-Wiesel",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/activism/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/apathy/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/hate/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/indifference/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/opposite/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/philosophy/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Friedrich-Nietzsche",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/friendship/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/lack-of-friendship/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/lack-of-love/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/marriage/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/unhappy-marriage/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Pablo-Neruda",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/poetry/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/girls/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/James-Baldwin",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/love/page/2/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/love/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/inspirational/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/life/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/humor/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/books/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/reading/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/friendship/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/friends/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/truth/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/simile/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/inspirational/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/life/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/humor/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/books/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/reading/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/friendship/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/friends/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/truth/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/simile/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/books/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/reading/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/friendship/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/friends/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/truth/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/simile/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/friendship/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/friends/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/truth/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/simile/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Stephenie-Meyer",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/drug/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/romance/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/friends/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/truth/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/simile/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/friends/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/heartbreak/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/sisters/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/courage/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/simplicity/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/understand/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Bob-Marley",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Dr-Seuss",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/fantasy/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Douglas-Adams",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/navigation/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Elie-Wiesel",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/activism/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/apathy/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/hate/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/indifference/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/opposite/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/philosophy/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Friedrich-Nietzsche",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/friendship/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/lack-of-friendship/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/lack-of-love/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/marriage/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/unhappy-marriage/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Mark-Twain",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/contentment/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Allen-Saunders",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/fate/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/misattributed-john-lennon/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/planning/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/plans/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/page/3/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/truth/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/simile/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Mother-Teresa",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/misattributed-to-mother-teresa/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/simile/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/friends/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/heartbreak/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/sisters/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Elie-Wiesel",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/activism/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/apathy/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/hate/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/indifference/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/opposite/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/philosophy/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/death/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/George-Eliot",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/C-S-Lewis",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/reading/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/tea/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Martin-Luther-King-Jr",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/hope/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Helen-Keller",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/inspirational/page/2/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/friends/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/heartbreak/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/sisters/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Bob-Marley",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Elie-Wiesel",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/activism/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/apathy/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/hate/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/indifference/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/opposite/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/philosophy/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Friedrich-Nietzsche",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/friendship/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/lack-of-friendship/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/lack-of-love/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/marriage/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/unhappy-marriage/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Pablo-Neruda",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/poetry/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/girls/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/James-Baldwin",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/love/page/2/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/heartbreak/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/sisters/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Douglas-Adams",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/navigation/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Mark-Twain",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/contentment/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/friendship/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Allen-Saunders",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/fate/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/misattributed-john-lennon/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/planning/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/plans/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Dr-Seuss",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/comedy/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/yourself/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/George-Bernard-Shaw",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Ralph-Waldo-Emerson",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/regrets/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/life/page/2/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/friendship/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Friedrich-Nietzsche",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/lack-of-friendship/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/lack-of-love/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/marriage/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/unhappy-marriage/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Mark-Twain",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/contentment/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Bob-Marley",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Alfred-Tennyson",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/courage/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Mark-Twain",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/contentment/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/friendship/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Ernest-Hemingway",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/novelist-quotes/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Stephenie-Meyer",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/drug/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/romance/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com/products/web-scraping-copilot/?utm_campaign=web-scraping-copilot-launch-Q1-2026&utm_activity=BAN&utm_medium=organic&utm_source=website",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com/data-extraction/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com/pricing/",
+      "depth": 2
+    },
+    {
+      "url": "https://app.zyte.com/account/login",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com/sign-up/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.g2.com/products/zyte/reviews",
+      "depth": 2
+    },
+    {
+      "url": "https://www.capterra.com/p/180165/Zyte/",
+      "depth": 2
+    },
+    {
+      "url": "https://proxyway.com/best/best-web-scraping-apis",
+      "depth": 2
+    },
+    {
+      "url": "https://app.zyte.com/account/signup/zyteapi",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com/zyte-web-scraping-api/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com/data-types/product-scraper/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com/data-types/news-articles-scraper/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com/data-types/web-data-for-ai/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com/data-types/business-location/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com/data-types/extract-social-media-data/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com/data-types/extract-search-engine-data/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com/data-types/real-estate-scraper/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com/data-types/job-scraper/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com/meet-zyte/",
+      "depth": 2
+    },
+    {
+      "url": "https://discord.com/invite/extract-data-community-993441606642446397",
+      "depth": 2
+    },
+    {
+      "url": "https://www.extractsummit.io/talks",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com/affiliate/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com/blog/introducing-the-zyte-integration-for-zapier/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com/blog/adrian-chaves-web-scraping-copilot-interview/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com/blog/code-is-cheap-ai-copilots-developer-shift/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com/blog/web-scraping-finally-has-a-home-in-the-ide/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com/blog/web-scraping-copilot-1-0-vs-code/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com/blog/build-your-own-mcp-server/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com/blog/more-data-more-trouble-ai-scraping-rag-lessons/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com/webinars/web-scraping-industry-report-2026-webinar/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com/webinars/master-modern-unblocking-tactics-against-the-latest-anti-bot-defenses/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com/blog/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com/learn/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com/webinars/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com/join-community/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com/news-articles-scraper/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com/data-types/search-engine-scraper/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com/data-types/social-media-scraper/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com/zyte-api/unblocking/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com/zyte-api/headless-browser/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com/zyte-api/ai-extraction/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com/web-scraping-copilot/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com/zyte-api-enterprise/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com/scrapy-cloud/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com/solution-overview/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com/case-study/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com/whitepaper-ebook/",
+      "depth": 2
+    },
+    {
+      "url": "https://docs.zyte.com/",
+      "depth": 2
+    },
+    {
+      "url": "https://info.zyte.com/data-maturity-model-self-assessment",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com/data-compliance/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com/jobs/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com/terms-policies/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com/trust-center/",
+      "depth": 2
+    },
+    {
+      "url": "https://support.zyte.com/support/home",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com/contact-us/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com/terms-policies/do-not-sell/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com/terms-policies/cookie-policy/",
+      "depth": 2
+    },
+    {
+      "url": "https://app.zyte.com/account/signup/zyteapi?_gl=1*1w80p43*_ga*MTU0MTY1NTMyOC4xNzA1NjU0NzMx*_ga_PC3KF6FQ4T*MTcwNzg5ODIwNS43Ny4xLjE3MDc5MDQxMjcuMC4wLjA.",
+      "depth": 2
+    },
+    {
+      "url": "https://www.zyte.com/talk-to-us/",
+      "depth": 2
+    },
+    {
+      "url": "https://app.zyte.com/account/signup/zyteapi?signup_pathway=cost-estimator&next=cost-estimator",
+      "depth": 2
+    },
+    {
+      "url": "https://ethicalwebdata.com/",
+      "depth": 2
+    },
+    {
+      "url": "https://mostlovedworkplace.com/companies/zyte/",
+      "depth": 2
+    },
+    {
+      "url": "https://jobgether.com/company/zyte",
+      "depth": 2
+    },
+    {
+      "url": "https://isoqar.com/iso-standards/iso-27001/",
+      "depth": 2
+    },
+    {
+      "url": "https://twitter.com/zytedata?lang=es",
+      "depth": 2
+    },
+    {
+      "url": "https://www.facebook.com/zytedata/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.instagram.com/zytedata/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.youtube.com/@zytedata",
+      "depth": 2
+    },
+    {
+      "url": "https://www.linkedin.com/company/zytedata",
+      "depth": 2
+    },
+    {
+      "url": "https://discord.com/invite/DwTnbrm83s",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/reading/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Dr-Seuss",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/learning/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/seuss/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/William-Nicholson",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/misattributed-to-c-s-lewis/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/George-R-R-Martin",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/read/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/readers/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/reading-books/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/C-S-Lewis",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/tea/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/J-D-Salinger",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/authors/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/literature/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/writing/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/library/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/blog/show/3078?ref=bbspring_eb",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/?ref=nav_home",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/review/list?ref=nav_mybooks",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/book?ref=nav_brws",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/recommendations?ref=nav_brws_recs",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/choiceawards?ref=nav_brws_gca",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/genres?ref=nav_brws_genres",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/giveaway?ref=nav_brws_giveaways",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/book/popular_by_date/2026/3?ref=nav_brws_newrels",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/list?ref=nav_brws_lists",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/book?ref=nav_brws_explore",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/news?ref=nav_brws_news",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/genres/art",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/genres/biography",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/genres/business",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/genres/children-s",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/genres/christian",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/genres/classics",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/genres/comics",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/genres/cookbooks",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/genres/ebooks",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/genres/fantasy",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/genres/fiction",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/genres/graphic-novels",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/genres/historical-fiction",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/genres/history",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/genres/horror",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/genres/memoir",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/genres/music",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/genres/mystery",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/genres/non-fiction",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/genres/poetry",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/genres/psychology",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/genres/romance",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/genres/science",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/genres/science-fiction",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/genres/self-help",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/genres/sports",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/genres/thriller",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/genres/travel",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/genres/young-adult",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/genres",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/group?ref=nav_comm",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/group?ref=nav_comm_groups",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes?ref=nav_comm_quotes",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/ask_the_author?ref=nav_comm_askauthor",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/user/sign_in?returnurl=undefined",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/user/sign_up",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/friend_quotes",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/my_authors",
+      "depth": 2
+    },
+    {
+      "url": "https://help.goodreads.com/s/article/Who-can-add-quotes-to-Goodreads",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/author/show/3565.Oscar_Wilde",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/19884-be-yourself-everyone-else-is-already-taken",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/user/new",
+      "depth": 2
+    },
+    {
+      "url": "https://images.gr-assets.com/quotes/1511992603p8/8630.jpg",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/attributed-no-source",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/best",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/life",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/love",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/misattributed-marilyn-monroe",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/mistakes",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/out-of-control",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/truth",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/worst",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/8630-i-m-selfish-impatient-and-a-little-insecure-i-make-mistakes",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/author/show/22302.Frank_Zappa",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/books",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/humor",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/66-so-many-books-so-little-time",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/author/show/9810.Albert_Einstein",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/human-nature",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/infinity",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/philosophy",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/science",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/stupidity",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/universe",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/942-two-things-are-infinite-the-universe-and-human-stupidity-and",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/author/show/13755.Marcus_Tullius_Cicero",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/simile",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/soul",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/764-a-room-without-books-is-like-a-body-without-a",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/author/show/5768330.Bernard_M_Baruch",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/ataraxy",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/be-yourself",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/confidence",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/fitting-in",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/individuality",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/misattributed-dr-seuss",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/those-who-matter",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/865-be-who-you-are-and-say-what-you-feel-because",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/author/show/1744830.William_W_Purkey",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/dance",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/heaven",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/hurt",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/inspirational",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/sing",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/10123-you-ve-gotta-dance-like-there-s-nobody-watching-love-like-you-ll",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/author/show/61105.Dr_Seuss",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/dreams",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/reality",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/sleep",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/7901-you-know-you-re-in-love-when-you-can-t-fall-asleep",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/author/show/259666.Mae_West",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/1598-you-only-live-once-but-if-you-do-it-right",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/author/show/5810891.Mahatma_Gandhi",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/action",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/change",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/misattributed-to-gandhi",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/wish",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/24499-be-the-change-that-you-wish-to-see-in-the",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/author/show/7715.Robert_Frost",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/258-in-three-words-i-can-sum-up-everything-i-ve-learned",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/author/show/1077326.J_K_Rowling",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/work/quotes/3046572",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/charles-bayard-mitchell",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/5399-if-you-want-to-know-what-a-man-s-like-take",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/author/show/957894.Albert_Camus",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/friends",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/friendship",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/misattributed-albert-camus",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/54-don-t-walk-in-front-of-me-i-may-not-follow",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/author/show/1244.Mark_Twain",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/lies",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/lying",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/memory",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/9131-if-you-tell-the-truth-you-don-t-have-to-remember",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/author/show/3503.Maya_Angelou",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/5934-i-ve-learned-that-people-will-forget-what-you-said-people",
+      "depth": 2
+    },
+    {
+      "url": "https://images.gr-assets.com/quotes/1387503187p8/10554.jpg",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/work/quotes/14816053",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/10554-friendship-is-born-at-the-moment-when-one-man",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/2448-to-live-is-the-rarest-thing-in-the-world-most",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/author/show/114059.Elbert_Hubbard",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/16949-a-friend-is-someone-who-knows-all-about-you-and",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/enemies",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/forgiveness",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/strategy",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/4583-always-forgive-your-enemies-nothing-annoys-them-so-much",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/author/show/23924.Martin_Luther_King_Jr_",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/work/quotes/52037",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/darkness",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/drive-out",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/hate",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/light",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/peace",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/943-darkness-cannot-drive-out-darkness-only-light-can-do-that",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/carpe-diem",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/education",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/learning",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/2253-live-as-if-you-were-to-die-tomorrow-learn-as",
+      "depth": 2
+    },
+    {
+      "url": "https://images.gr-assets.com/quotes/1387506524p8/2534.jpg",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/work/quotes/2236198",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/2534-we-accept-the-love-we-think-we-deserve",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/author/show/1938.Friedrich_Nietzsche",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/work/quotes/19234046",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/music",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/4590-without-music-life-would-be-a-mistake",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/work/quotes/23684401",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/intelligence",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/self-deprecation",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/1198-i-am-so-clever-that-sometimes-i-don-t-understand-a",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/author/show/12080.Ralph_Waldo_Emerson",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/accomplishment",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/conformity",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/876-to-be-yourself-in-a-world-that-is-constantly-trying",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/author/show/5255891.Steve_Jobs",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/924-here-s-to-the-crazy-ones-the-misfits-the-rebels-the",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/insanity",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/misattributed-ben-franklin",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/misattributed-mark-twain",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/misattributed-to-einstein",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/5543-insanity-is-doing-the-same-thing-over-and-over-again",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/author/show/7617.Andr_Gide",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/work/quotes/6810684",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/14304-it-is-better-to-be-hated-for-what-you-are",
+      "depth": 2
+    },
+    {
+      "url": "https://images.gr-assets.com/quotes/1512016299p8/12379.jpg",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/12379-i-believe-that-everything-happens-for-a-reason-people-change",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/author/show/33394.H_Jackson_Brown_Jr_",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/work/quotes/41658",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/actions",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/disappointed",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/disappointment",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/dream",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/explore",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/sail",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/2340-twenty-years-from-now-you-will-be-more-disappointed-by",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes?page=2",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes?page=3",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes?page=4",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes?page=5",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes?page=6",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes?page=7",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes?page=8",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes?page=9",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes?page=99",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes?page=100",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/list?id=false",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/new",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/inspirational-quotes",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/god",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/wisdom",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/romance",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/poetry",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/life-lessons",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/quotes",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/death",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/happiness",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/hope",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/faith",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/inspiration",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/spirituality",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/motivational",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/relationships",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/religion",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/life-quotes",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/writing",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/love-quotes",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/success",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/motivation",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/time",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/quotes/tag/motivational-quotes",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/about/us",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/jobs",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/about/terms",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/about/privacy",
+      "depth": 2
+    },
+    {
+      "url": "https://help.goodreads.com/s/article/Goodreads-Interest-Based-Ads-Notice",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/adprefs",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/ccbaprefs",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/help?action_type=help_web_footer",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/author/program",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/advertisers",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/news?content_type=author_blogs",
+      "depth": 2
+    },
+    {
+      "url": "https://www.facebook.com/Goodreads/",
+      "depth": 2
+    },
+    {
+      "url": "https://twitter.com/goodreads",
+      "depth": 2
+    },
+    {
+      "url": "https://www.instagram.com/goodreads/",
+      "depth": 2
+    },
+    {
+      "url": "https://www.linkedin.com/company/goodreads-com/",
+      "depth": 2
+    },
+    {
+      "url": "https://itunes.apple.com/app/apple-store/id355833469?pt=325668&ct=mw_footer&mt=8",
+      "depth": 2
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=com.goodreads&utm_source=mw_footer&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1",
+      "depth": 2
+    },
+    {
+      "url": "https://www.goodreads.com/toggle_mobile",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Garrison-Keillor",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/religion/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Jim-Henson",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Charles-M-Schulz",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/chocolate/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/food/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Suzanne-Collins",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Charles-Bukowski",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Dr-Seuss",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/philosophy/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/George-Carlin",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/insanity/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/lies/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/lying/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/self-indulgence/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/truth/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/humor/page/2/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/truth/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/George-Carlin",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/insanity/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/lies/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/lying/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/self-indulgence/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/misattributed-mark-twain/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Jorge-Luis-Borges",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/library/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/C-S-Lewis",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/reading/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/tea/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Haruki-Murakami",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/thought/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Ernest-Hemingway",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/novelist-quotes/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/J-D-Salinger",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/authors/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/literature/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/writing/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/author/Madeleine-LEngle",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/children/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/difficult/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/grown-ups/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/write/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/writers/page/1/",
+      "depth": 2
+    },
+    {
+      "url": "https://quotes.toscrape.com/tag/books/page/2/",
+      "depth": 2
+    }
+  ],
+  "created_at": 1774344639.892097,
+  "started_at": 1774344639.897349,
+  "finished_at": null,
+  "max_workers": 8,
+  "max_queue_size": 10000
+}

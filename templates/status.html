@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Detailed crawler status and monitoring">
+    <title>📊 Crawler Status</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <span class="nav-logo">🕷️</span>
+            <span class="nav-title">Web Crawler</span>
+        </div>
+        <div class="nav-links">
+            <a href="/" class="nav-link">Dashboard</a>
+            <a href="/search-page" class="nav-link">Search</a>
+        </div>
+        <div class="nav-status">
+            <span class="status-dot" id="crawlerDot"></span>
+            <span class="status-text" id="crawlerStatusText">Loading...</span>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- Crawler Info Header -->
+        <section class="card glass-card">
+            <div class="status-header">
+                <div>
+                    <h1 class="page-title" id="crawlerId">Crawler —</h1>
+                    <p class="crawler-origin-url" id="crawlerOrigin">—</p>
+                </div>
+                <div class="status-actions" id="statusActions"></div>
+            </div>
+        </section>
+
+        <!-- Stats Grid -->
+        <section class="stats-grid stats-grid-6" id="detailedStats">
+            <div class="stat-card">
+                <div class="stat-value" id="statPages">0</div>
+                <div class="stat-label">Pages Crawled</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="statLinks">0</div>
+                <div class="stat-label">Links Found</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value stat-active" id="statPending">0</div>
+                <div class="stat-label">Pending (Queue + Workers)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="statPPS">0</div>
+                <div class="stat-label">Pages / sec</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="statErrors">0</div>
+                <div class="stat-label">Errors</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="statElapsed">—</div>
+                <div class="stat-label">Elapsed</div>
+            </div>
+        </section>
+
+        <!-- Queue Utilization -->
+        <section class="card glass-card">
+            <h2 class="card-title">
+                <span class="icon">📈</span>
+                Queue & Back Pressure
+            </h2>
+            <div class="queue-monitor">
+                <div class="queue-gauge" style="margin-bottom: 24px;">
+                    <div class="gauge-header">
+                        <span>Current Activity <span style="font-size: 11px; color: var(--text-dim); font-weight: normal;">(vs Peak)</span></span>
+                        <span id="activityPct">0%</span>
+                    </div>
+                    <div class="progress-bar progress-bar-large" style="height: 12px; border-radius: 6px;">
+                        <div class="progress-fill" id="activityBar" style="width: 0%;"></div>
+                    </div>
+                    <div class="gauge-labels">
+                        <span>0</span>
+                        <span id="activityLabel">0 / 0</span>
+                        <span id="peakLabel">0 (Peak)</span>
+                    </div>
+                </div>
+                <div class="queue-gauge">
+                    <div class="gauge-header">
+                        <span>Absolute Capacity</span>
+                        <span id="queuePct">0%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="queueBar" style="width: 0%"></div>
+                    </div>
+                    <div class="gauge-labels">
+                        <span>0</span>
+                        <span id="queueLabel">0 / 10000</span>
+                        <span id="maxQueueLabel">10000</span>
+                    </div>
+                </div>
+                <div class="backpressure-status" id="backpressureStatus">
+                    <span class="bp-indicator bp-normal"></span>
+                    <span>Normal — Queue has capacity</span>
+                </div>
+                <div class="queue-details">
+                    <div class="queue-detail-item">
+                        <span class="detail-label">Queue Size</span>
+                        <span class="detail-value" id="rawQueueSize">0</span>
+                    </div>
+                    <div class="queue-detail-item">
+                        <span class="detail-label">Active Workers</span>
+                        <span class="detail-value" id="activeWorkers">0</span>
+                    </div>
+                    <div class="queue-detail-item">
+                        <span class="detail-label">High Water Mark</span>
+                        <span class="detail-value" id="queueHighWater">0</span>
+                    </div>
+                    <div class="queue-detail-item">
+                        <span class="detail-label">Max Workers</span>
+                        <span class="detail-value" id="workerCount">8</span>
+                    </div>
+                    <div class="queue-detail-item">
+                        <span class="detail-label">Visited URLs</span>
+                        <span class="detail-value" id="visitedCount">0</span>
+                    </div>
+                    <div class="queue-detail-item">
+                        <span class="detail-label">Links Dropped</span>
+                        <span class="detail-value" id="linksDropped" style="color: var(--danger, #f87171)">0</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Errors -->
+        <section class="card glass-card">
+            <h2 class="card-title">
+                <span class="icon">⚠️</span>
+                Recent Errors
+            </h2>
+            <div id="errorsList" class="errors-list">
+                <div class="empty-state-small">No errors</div>
+            </div>
+        </section>
+    </main>
+
+    <script src="/static/js/app.js"></script>
+    <script>
+        const crawlerId = '{{ crawler_id }}';
+
+        async function refreshStatus() {
+            try {
+                const resp = await fetch(`/api/crawlers/${crawlerId}`);
+                if (!resp.ok) {
+                    document.getElementById('crawlerId').textContent = 'Crawler not found';
+                    return;
+                }
+                const c = await resp.json();
+
+                // Header
+                document.getElementById('crawlerId').textContent = `Crawler ${c.crawler_id}`;
+                document.getElementById('crawlerOrigin').textContent = c.origin;
+
+                // Status dot
+                const dot = document.getElementById('crawlerDot');
+                const statusText = document.getElementById('crawlerStatusText');
+                dot.className = `status-dot ${c.status === 'running' ? 'active' : c.status === 'paused' ? 'paused' : ''}`;
+                statusText.textContent = c.status.charAt(0).toUpperCase() + c.status.slice(1);
+
+                // Actions
+                const actions = document.getElementById('statusActions');
+                if (c.status === 'running') {
+                    actions.innerHTML = `
+                        <button class="btn btn-warn" onclick="controlCrawler('pause')">⏸ Pause</button>
+                        <button class="btn btn-danger" onclick="controlCrawler('stop')">⏹ Stop</button>`;
+                } else if (c.status === 'paused') {
+                    actions.innerHTML = `
+                        <button class="btn btn-success" onclick="controlCrawler('resume')">▶ Resume</button>
+                        <button class="btn btn-danger" onclick="controlCrawler('stop')">⏹ Stop</button>`;
+                } else {
+                    actions.innerHTML = `<span class="crawler-badge badge-${c.status}">${c.status}</span>`;
+                }
+
+                // Stats
+                document.getElementById('statPages').textContent = c.stats.pages_crawled;
+                document.getElementById('statLinks').textContent = c.stats.links_discovered;
+                document.getElementById('statPending').textContent = c.total_pending || 0;
+                document.getElementById('statPPS').textContent = c.pages_per_sec || 0;
+                document.getElementById('statErrors').textContent = c.stats.pages_errored;
+                document.getElementById('statElapsed').textContent = formatDuration(c.elapsed_seconds);
+
+                // Queue Absolute Capacity
+                const qPct = c.queue_utilization || 0;
+                document.getElementById('queuePct').textContent = `${qPct}%`;
+                const bar = document.getElementById('queueBar');
+                bar.style.width = `${Math.min(qPct, 100)}%`;
+                bar.className = `progress-fill ${qPct > 80 ? 'backpressure' : ''}`;
+                document.getElementById('queueLabel').textContent = `${c.total_pending || 0} / ${c.max_queue_size}`;
+                document.getElementById('maxQueueLabel').textContent = c.max_queue_size;
+
+                // Activity Relative to Peak
+                const peak = Math.max(c.stats.queue_high_water || 0, 10);
+                const pending = c.total_pending || 0;
+                const actPct = Math.min(Math.round((pending / peak) * 100), 100);
+                document.getElementById('activityPct').textContent = `${actPct}%`;
+                const actBar = document.getElementById('activityBar');
+                actBar.style.width = `${actPct}%`;
+                document.getElementById('activityLabel').textContent = `${pending} / ${peak}`;
+                document.getElementById('peakLabel').textContent = `${peak} (Peak)`;
+
+                document.getElementById('rawQueueSize').textContent = c.queue_size;
+                document.getElementById('activeWorkers').textContent = `${c.active_workers || 0} / ${c.max_workers}`;
+                document.getElementById('queueHighWater').textContent = c.stats.queue_high_water;
+                document.getElementById('workerCount').textContent = c.max_workers;
+                document.getElementById('visitedCount').textContent = c.visited_count;
+                document.getElementById('linksDropped').textContent = c.stats.links_dropped || 0;
+
+                // Back pressure status
+                const bp = document.getElementById('backpressureStatus');
+                if (qPct > 90) {
+                    bp.innerHTML = '<span class="bp-indicator bp-critical"></span><span>⚠ CRITICAL — Queue near capacity, back pressure active</span>';
+                } else if (qPct > 70) {
+                    bp.innerHTML = '<span class="bp-indicator bp-warning"></span><span>Warning — Queue utilization high</span>';
+                } else {
+                    bp.innerHTML = '<span class="bp-indicator bp-normal"></span><span>Normal — Queue has capacity</span>';
+                }
+
+                // Errors
+                const errList = document.getElementById('errorsList');
+                if (c.recent_errors && c.recent_errors.length > 0) {
+                    errList.innerHTML = c.recent_errors.map(e => `
+                        <div class="error-item">
+                            <span class="error-url">${truncateUrl(e.url, 60)}</span>
+                            <span class="error-msg">${e.error}</span>
+                        </div>
+                    `).join('');
+                } else {
+                    errList.innerHTML = '<div class="empty-state-small">No errors</div>';
+                }
+
+            } catch (e) {
+                console.error('Failed to refresh status:', e);
+            }
+        }
+
+        async function controlCrawler(action) {
+            try {
+                await fetch(`/api/crawlers/${crawlerId}/${action}`, {method: 'POST'});
+                refreshStatus();
+            } catch (e) {
+                showToast('Action failed', 'error');
+            }
+        }
+
+        function formatDuration(secs) {
+            if (!secs || secs < 0) return '—';
+            if (secs < 60) return `${Math.round(secs)}s`;
+            if (secs < 3600) return `${Math.floor(secs/60)}m ${Math.round(secs%60)}s`;
+            return `${Math.floor(secs/3600)}h ${Math.floor((secs%3600)/60)}m`;
+        }
+
+        function truncateUrl(url, max) {
+            if (!url) return '—';
+            if (url.length <= max) return url;
+            return url.substring(0, max - 3) + '...';
+        }
+
+        refreshStatus();
+        setInterval(refreshStatus, 2000);
+    </script>
+</body>
+</html>
