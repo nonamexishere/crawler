@@ -1,4 +1,4 @@
-Just to let  you guys know: I deleted all the other data files except p.data. I had to decrease the size of my p.data file. I filled the quiz before I even upload this project to github so they might have different entries than the current.
+Just to let  you know: I deleted all the other data files except p.data. I had to decrease the size of my p.data file. I filled the quiz before I even upload this project to github so they might have different entries than the current.
 
 
 # 🕷️ Web Crawler
